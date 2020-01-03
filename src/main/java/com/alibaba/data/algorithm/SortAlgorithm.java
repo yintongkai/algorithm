@@ -142,12 +142,12 @@ public class SortAlgorithm {
                 datas[i] = datas[j];
                 datas[j] = tem;
             }
-            System.out.println(Arrays.toString(datas)+" i="+i+" j="+j);
+            //System.out.println(Arrays.toString(datas)+" i="+i+" j="+j);
         }
         datas[low] = datas[i];
         datas[i] = temp;
-        System.out.println(Arrays.toString(datas)+" i="+i+" j="+j);
-        System.out.println("**********************");
+        //System.out.println(Arrays.toString(datas)+" i="+i+" j="+j);
+        //System.out.println("**********************");
         quickSort(datas, low, j - 1);
         quickSort(datas, j + 1, high);
         return datas;
